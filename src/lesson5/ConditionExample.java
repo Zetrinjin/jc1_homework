@@ -11,10 +11,12 @@ public class ConditionExample {
         }
         System.out.println(y);
 
+
+
     }
 
 
-    public static void summa(String[] args){
+    public void summa(String[] args){
         int x= 5, y =7;
 
         if(x == 5){

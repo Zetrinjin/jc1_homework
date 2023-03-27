@@ -27,9 +27,9 @@ public class Switchexample {
             default: {
                 System.out.println("usage java");
                 System.out.println("command: start, stop or pause");
-                System.exit(1);
+                System.exit(1);// для отрицательного завершения
             }
         }
-        System.exit(0);
+        System.exit(0);// для положительного завершения
     }
 }

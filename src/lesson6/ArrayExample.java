@@ -21,8 +21,8 @@ public class ArrayExample {
 
         System.out.println();
         Arrays.sort(arr2);
-        for (int i = 0; i< arr2.length;i++){
-            System.out.println(arr2[i]);
+        for (int elementArr2 : arr2){//хотим пройти по итераци столько раз сколько в массиве элементов
+            System.out.println(elementArr2 + "");
         }
     }
 }

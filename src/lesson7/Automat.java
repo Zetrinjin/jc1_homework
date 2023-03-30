@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Automat {
 
-    Product[] products = {
+    final Product[] products = {
             new Product("Lays",5),
             new Product("Snickers",3),
             new Product("Bonaqua",7),

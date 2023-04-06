@@ -10,6 +10,10 @@ public class Car {
 
     String model;
 
+    public int compareTo(Car car){
+        return (color.getRGB() - car.color.getRGB())
+                + model.compareTo(car.model);
+    }
     public static void main(String[] args) {
         Car bmw,audi;
 

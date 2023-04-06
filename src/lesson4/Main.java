@@ -12,5 +12,7 @@ public class Main {
         System.out.println("man2 " + man2.hairLenght);
         man2.grow();
         System.out.println("man2 " + man2.hairLenght);
+
+
     }
 }

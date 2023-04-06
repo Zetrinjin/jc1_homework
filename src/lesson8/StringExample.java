@@ -11,6 +11,15 @@ public class StringExample {
         char[] ch2 =s2.toCharArray();
 
         System.out.println(s3.concat(s2));
+
+
+        Long l1=120L;//autobox
+        long l2 = l1;//unboxing
+
+        Number num =new Integer(1);
+
+        System.out.println(l1);
+        System.out.println(l2);
     }
 
 }

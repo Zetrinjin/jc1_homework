@@ -4,10 +4,11 @@ public class BmwX6Alpina extends Bmw{
 
     public BmwX6Alpina() {
         super();//обращение к супер конструктору идет на первом месте и нигде больше
+        //setBrandName("zaporo");//так делать нельзя, ломается наследовательность
         System.out.println("call super");
 
         System.out.println("Finish constructing");
-        //setBrandName("zaporo");//так делать нельзя, ломается наследовательность
+
     }
 
     @Override

@@ -3,7 +3,11 @@ package lesson11;
 public class Bmw  extends Machine implements CarDriving{
 
     public Bmw(){
-        setBrandName("bmw");
+        this("bmw");
+    }
+
+    public Bmw(String brand){
+        setBrandName(brand);
     }
 
     @Override

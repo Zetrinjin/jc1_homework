@@ -16,6 +16,16 @@ public class Main {
         fleetManager.setCarDrivings(cars);
         fleetManager.driveAll();
 
+        fleetManager.setCarDrivings(new CarDriving[]{//иннерный анонимный класс
+                new CarDriving() {
+                    private int km;
+                    @Override
+                    public int drive(int distance) {
+                        return km+=distance;
+                    }
+                }
+        });
+
         MachineDriver driver = new MachineDriver();
         driver.setMachine(new Vwpolo());
         driver.startEngine();

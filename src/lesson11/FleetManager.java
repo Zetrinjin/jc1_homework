@@ -10,8 +10,6 @@ public class FleetManager {
         this.carDrivings = carDrivings;
     }
 
-
-
     public void driveAll(){
         Random random_int = new Random();
 

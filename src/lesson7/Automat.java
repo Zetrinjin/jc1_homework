@@ -2,20 +2,26 @@ package lesson7;
 
 import java.util.Scanner;
 
-public class Automat {
+public class Automat<T extends Product> {
 
-    final Product[] products = {
+   /* final T[] products = {
             new Product("Lays",5),
             new Product("Snickers",3),
             new Product("Bonaqua",7),
             new Product("Oreo",4),
             new Product("Orbit",6),
 
-    };
+    };*/
+    private T[] products;
+
+    public void setProducts(T[] products) {
+        this.products = products;
+    }
+
     public void printMainMenu(){
 
         int num = 1;
-        for(Product product:products){
+        for(T product:products){
             if (product.count>0) {
                 System.out.println(" " + num + ":" + product.name + "[" + product.count + "]");
             }
@@ -32,7 +38,7 @@ public class Automat {
             num = scanner.nextInt();
             isNumberCorrect = num >= 1 && num <= products.length;
             if(isNumberCorrect){//проеверка для количества продуктов
-                Product product = products[num-1];
+                T product = products[num-1];
                 isNumberCorrect =product.count>0;
             }
             if (!isNumberCorrect) {
@@ -48,7 +54,7 @@ public class Automat {
     }
 
     public void takeProduct(int productNum) {
-        Product product=products[productNum - 1];
+        T product=products[productNum - 1];
         product.count--;
         System.out.println("please take product " + product.name + "");
         System.out.println("remain " + product.count + " of " + product.name);//проверка на количество оставшихся продуктов

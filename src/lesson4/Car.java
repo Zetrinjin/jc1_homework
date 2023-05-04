@@ -30,5 +30,10 @@ public class Car {
         audi = new Car(234_432);
         audi.color = Color.ORANGE;
         audi.model = "Audi A8";
+
+    }
+
+    public String getPlateNumber() {
+        return "xxx";
     }
 }

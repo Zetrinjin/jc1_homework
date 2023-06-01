@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone = "yes" ?>
-<person>
-    <name language = "EN">Ivan  </name>
-    <!--так делается комментарий
-    -->
-    <name language = "RU">Ivan  </name>
+<person id="id1">
+    value
+   <!-- <name language = "EN">Ivan  </name>
+    &lt;!&ndash;так делается комментарий
+    &ndash;&gt;
+    <name language = "RU">Иван  </name>
     <kids/>
     <a>
         <b>&lt; &amp; Test &gt; </b>
-    </a>
+    </a>-->
 </person>

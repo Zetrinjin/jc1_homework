@@ -20,6 +20,8 @@ public class JsonParserExample {
         final String s= gson.toJson(carValueObject);
         System.out.println(s);
 
+        final CarValueObject carValueObject2 = gson.fromJson(s, CarValueObject.class);
+        System.out.println(carValueObject2);
 
 
     }
